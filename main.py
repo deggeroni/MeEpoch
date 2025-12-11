@@ -14,7 +14,7 @@ if __name__ == "__main__":
     events = load_event_table("TabelaEventos.csv")
     
     # Example filtering
-    selected = events.query("Dropout == 'Y' and NuvemTipo == 'N-S'")
+    selected = events.query("Dropout == '0' and NuvemTipo == '1'")
     
     # Dates
     year, month, day, hour, minute = extract_date_components(selected)
